@@ -1,0 +1,59 @@
+<!doctype html>
+<!--[if IE 6]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if (gt IE 6)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>vzaar.jQuery</title>
+	<meta name="description" content="vzaar jQuery plugin">
+	<meta name="author" content="Dan Rees-Jones">
+	<link href="vzaar.jQuery-0.1.css" media="screen" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style type="text/css">
+    .contain {
+      width: 600px;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    body a {
+      color: #477b96;
+      text-decoration: underline;
+    }
+
+    body a:hover {
+      text-decoration: none;
+    }
+	</style>
+</head>
+<body class="home">
+	<div class="container">
+		<div class="row contain">
+	    <iframe allowFullScreen
+	            allowTransparency="true"
+	            class="vzaar-video-player"
+	            frameborder="0"
+	            height="262"
+	            id="vzvd-918833"
+	            name="vzvd-918833"
+	            src="http://view.vzaar.com/918833/player?apiOn=true"
+	            title="vzaar video player"
+	            type="text/html"
+	            width="448">
+	    </iframe>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="vzaar.jQuery-0.1.min.js"></script>
+  <script src="http://player.vzaar.net/libs/flashtakt/client.js"></script>
+	<script>
+    $(document).ready(function() {
+      $('#vzvd-918833').vzBookmarkifier();
+    });
+	</script>
+</body>
+</html>
