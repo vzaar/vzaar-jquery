@@ -6,39 +6,39 @@ vzaar.jQuery takes several popular applications of our JavaScript API and wraps 
 Preparation
 -----------
 
-1. Download and extract the [zip file](http://link.com).
+1. Download and extract the [zip file](https://github.com/vzaar/vzaar-jquery/archive/master.zip).
 2. Upload it to your server
 3. Link to the CSS in your header:
 
-    <link href="js/vzaar.jQuery.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="js/vzaar.jQuery.min.css" media="screen" rel="stylesheet" type="text/css">
 4. Link to the JavaScript files at the foot of your HTML
 
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/vzaar.jQuery-0.1.min.js"></script>
-    <script src="js/flashtakt.client.js"></script>
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/vzaar.jQuery-0.1.min.js"></script>
+        <script src="js/flashtakt.client.js"></script>
 
   4a. Or go the CDN-hosted route:
   
-      <link href="//js.vzaar.io/0.1/vzaar.jQuery.min.css" media="screen" rel="stylesheet" type="text/css">
+         <link href="//js.vzaar.io/0.1/vzaar.jQuery.min.css" media="screen" rel="stylesheet" type="text/css">
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      <script src="//js.vzaar.io/0.1/vzaar.jQuery.min.js"></script>
-      <script src="//player.vzaar.net/libs/flashtakt/client.js"></script>
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+         <script src="//js.vzaar.io/0.1/vzaar.jQuery.min.js"></script>
+         <script src="//player.vzaar.net/libs/flashtakt/client.js"></script>
 
 5. Embed a vzaar video and tell us you need the JavaScript API
 
-    <iframe allowFullScreen
-      allowTransparency="true"
-      class="vzaar-video-player"
-      frameborder="0"
-      height="432"
-      id="vzvd-918833"
-      name="vzvd-918833"
-      src="http://view.vzaar.com/918833/player?apiOn=true"
-      title="vzaar video player"
-      type="text/html"
-      width="768">
-    </iframe>
+        <iframe allowFullScreen
+          allowTransparency="true"
+          class="vzaar-video-player"
+          frameborder="0"
+          height="432"
+          id="vzvd-918833"
+          name="vzvd-918833"
+          src="http://view.vzaar.com/918833/player?apiOn=true"
+          title="vzaar video player"
+          type="text/html"
+          width="768">
+        </iframe>
 
 Usage
 -----
@@ -50,8 +50,8 @@ Basic usage:
 
     $(document).ready(function() {
       $('#vzvd-918833').vzChapterizer({
-    	  chapters		   : [0, 28, 79],
-    		titles			   : ["Intro", "Another chapter", "The end!"]
+    	chapters		   : [0, 28, 79],
+    	titles			   : ["Intro", "Another chapter", "The end!"]
     	});
     });
 
@@ -131,7 +131,7 @@ Example:
       $('#vzvd-918833').vzPrerollinator({
         pre     : "1096251"
       }).vzPostrollinator({
-        post     : "1192459"
+        post    : "1192459"
       });
     });
 
