@@ -9,13 +9,16 @@ Preparation
 1. Download and extract the [zip file](http://link.com).
 2. Upload it to your server
 3. Link to the CSS in your header:
+
     <link href="js/vzaar.jQuery.min.css" media="screen" rel="stylesheet" type="text/css">
 4. Link to the JavaScript files at the foot of your HTML
-	  <script src="js/jquery-1.9.1.min.js"></script>
-	  <script src="js/vzaar.jQuery-0.1.min.js"></script>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/vzaar.jQuery-0.1.min.js"></script>
     <script src="js/flashtakt.client.js"></script>
 
   4a. Or go the CDN-hosted route:
+  
       <link href="//js.vzaar.io/0.1/vzaar.jQuery.min.css" media="screen" rel="stylesheet" type="text/css">
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -23,6 +26,7 @@ Preparation
       <script src="//player.vzaar.net/libs/flashtakt/client.js"></script>
 
 5. Embed a vzaar video and tell us you need the JavaScript API
+
     <iframe allowFullScreen
       allowTransparency="true"
       class="vzaar-video-player"
@@ -43,6 +47,7 @@ Usage
 This takes a list of timecodes in seconds and creates links to points in your video.
 
 Basic usage:
+
     $(document).ready(function() {
       $('#vzvd-918833').vzChapterizer({
     	  chapters		   : [0, 28, 79],
