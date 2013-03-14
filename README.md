@@ -99,9 +99,9 @@ Basic usage:
 All options:
 
     $('#vzvd-918833').vzPrerollinator({
-      pre       : "1096251",
-      prevars   : "disableControls=true&hideControls=true",
-      mainvars  : "brandText=Hello!&brandLink=http://vzaar.com"
+      pre       : "1096251",                                    // vzaar video id
+      prevars   : "disableControls=true&hideControls=true",     // flashvars for preroll
+      mainvars  : "brandText=Hello!&brandLink=http://vzaar.com" // flashvars for main video
     });
 
 ###Postrollinator
@@ -118,8 +118,8 @@ Basic usage:
 All options:
 
     $('#vzvd-918833').vzPostrollinator({
-      post      : "1192459",
-      postvars  : "endText=Goodbye!&endLink=http://vzaar.com"
+      post      : "1192459",                                   
+      postvars  : "endText=Goodbye!&endLink=http://vzaar.com"  // flashvars for postroll
     });
 
 ###Chaining
@@ -139,4 +139,4 @@ Example:
 ####Flash
 Chrome, Firefox IE8+
 ####HTML5
-Most things should work, but might not on iDevices due to restrictions.
+Most things should work, but might not on iDevices due to Steve Jobs :ghost:
