@@ -85,6 +85,15 @@ All options:
       message     : "Are you sure?"   // custom message if persistent is on
     });
 
+###Playcountattacher
+Displays the video's playcount below the video
+
+Basic usage:
+    
+    $(document).ready(function() {
+      $('#vzvd-918833').vzPlaycountattacher();
+    });
+    
 ###Prerollinator
 Plays another of your vzaar videos as preroll.
 
