@@ -112,7 +112,6 @@
 
     vzp.ready(function() {
       vzp.addEventListener("playState", function(state) {
-        console.log(state);
         if (state == 'mediaStarted') {
           vzp.seekTo($.cookie('bookmark'));
         }
@@ -269,6 +268,20 @@
         }
       }
 
+    });
+    return this;
+  };
+
+  $.fn.vzPlaycountattacher = function(options){
+    var that = this,
+        id = that.attr("id").match(/\d{1,7}/)[0],
+        url = '//vzaar.com/api/videos/' + id + '.json?callback=?';
+
+    $.getJSON(url, function (video) {
+      if (video) {
+        var plays = video.play_count === 1 ? video.play_count + " play" : video.play_count + " plays";
+        $(that).after('<div class="vzPlaycount">' + plays + '</div>');
+      }
     });
     return this;
   };
