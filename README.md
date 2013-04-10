@@ -138,6 +138,6 @@ Example:
 
 ###Compatibility
 ####Flash
-Chrome, Firefox IE8+
+Chrome, Firefox, IE8+
 ####HTML5
-Most things should work, but might not on iDevices due to Steve Jobs :ghost:
+Most things should work, but might not on iDevices, due to Steve Jobs :ghost:
