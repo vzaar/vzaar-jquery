@@ -59,7 +59,7 @@ All options:
 
     $('#vzvd-918833').vzChapterizer({
       chapters       : [0, 28, 79],
-      titles         : ["Intro", "Another chapter", "The end!"]
+      titles         : ["Intro", "Another chapter", "The end!"],
       orientation    : "horizontal",  // horizontal or vertical list layout.
       position       : "bottom",      // positioning of the list -
                                       // top, left, bottom or right.
