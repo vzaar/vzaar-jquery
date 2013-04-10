@@ -48,11 +48,14 @@
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="vzaar.jQuery-0.1.js"></script>
+	<script src="vzaar.jQuery-0.1.min.js"></script>
   <script src="http://player.vzaar.net/libs/flashtakt/client.js"></script>
 	<script>
     $(document).ready(function() {
-      $('#vzvd-918833').vzPlaycountattacher();
+      $('#vzvd-918833').vzPostrollinator({
+        post      : "1192459",                                   
+        postvars  : "endText=Goodbye!&endLink=http://vzaar.com"  // flashvars for postroll
+      });
     });
 	</script>
 </body>

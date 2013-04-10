@@ -275,7 +275,7 @@
   $.fn.vzPlaycountattacher = function(options){
     var that = this,
         id = that.attr("id").match(/\d{1,7}/)[0],
-        url = '//vzaar.com/api/videos/' + id + '.json?callback=?';
+        url = 'http://vzaar.com/api/videos/' + id + '.json?callback=?';
 
     $.getJSON(url, function (video) {
       if (video) {
@@ -293,7 +293,7 @@ function vzInit(id) {
 }
 
 function vzEmbed(opts) {
-  var url = "//view.vzaar.com/" + opts.newId + "/player?apiOn=true&autoplay=true&" + opts.flashvars;
+  var url = "http://view.vzaar.com/" + opts.newId + "/player?apiOn=true&autoplay=true&" + opts.flashvars;
   $('#'+opts.id).parent().fadeOut("slow").promise().done(function() {
     $('#'+opts.id).attr("src", url);
     $(this).delay(2000).fadeIn('slow');
