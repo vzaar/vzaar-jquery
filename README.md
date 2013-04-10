@@ -25,6 +25,7 @@ Preparation
          <script src="//js.vzaar.io/0.1/vzaar.jQuery.min.js"></script>
          <script src="//player.vzaar.net/libs/flashtakt/client.js"></script>
 -->
+
 5. Embed a vzaar video and tell us you need the JavaScript API
 
         <iframe allowFullScreen
