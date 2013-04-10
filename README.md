@@ -1,7 +1,7 @@
 vzaar.jQuery
 ============
-
-vzaar.jQuery takes several popular applications of our JavaScript API and wraps them up in a handy plugin for your enjoyment and edification.
+<hr>
+**vzaar.jQuery takes several popular applications of our JavaScript API and wraps them up in a handy plugin for your enjoyment and edification.**
 
 Preparation
 -----------
