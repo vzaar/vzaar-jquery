@@ -15,7 +15,7 @@ Preparation
 
         <script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/vzaar.jQuery-0.1.min.js"></script>
-        <script src="js/flashtakt.client.js"></script>
+        <script src="js/flashtakt.client.min.js"></script>
         
     4a. Or go the CDN-hosted route
             
