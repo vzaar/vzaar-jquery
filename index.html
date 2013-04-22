@@ -39,7 +39,7 @@
 	            height="262"
 	            id="vzvd-918833"
 	            name="vzvd-918833"
-	            src="http://view.vzaar.com/918833/player?apiOn=true"
+	            src="http://view.staging.vzaar.com/918833/player?apiOn=true"
 	            title="vzaar video player"
 	            type="text/html"
 	            width="448">
@@ -48,14 +48,11 @@
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="vzaar.jQuery-0.1.min.js"></script>
+	<script src="vzaar.jQuery-0.1.js"></script>
   <script src="http://player.vzaar.net/libs/flashtakt/client.js"></script>
 	<script>
     $(document).ready(function() {
-      $('#vzvd-918833').vzPostrollinator({
-        post      : "1192459",                                   
-        postvars  : "endText=Goodbye!&endLink=http://vzaar.com"  // flashvars for postroll
-      });
+      $('#vzvd-918833').vzPlaycountattacher();
     });
 	</script>
 </body>
