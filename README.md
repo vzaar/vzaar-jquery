@@ -16,6 +16,12 @@ Preparation
         <script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/vzaar.jQuery-0.1.min.js"></script>
         <script src="js/flashtakt.client.js"></script>
+        
+    4a. Or go the CDN-hosted route
+            
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="//libs.vzaar.io/js/vzaar.jQuery-0.1.min.js"></script>
+            <script src="//libs.vzaar.io/js/vzaar.jQuery-0.1.css"></script>
 
 5. Embed a vzaar video and tell us you need the JavaScript API
 
