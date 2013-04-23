@@ -19,7 +19,7 @@ Preparation
         
     4a. Or go the CDN-hosted route
             
-            <script src="//libs.vzaar.io/css/vzaar.jQuery-0.1.css"></script>
+            <script src="//libs.vzaar.io/js/assets/vzaar.jQuery-0.1.css"></script>
             
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             <script src="//libs.vzaar.io/js/vzaar.jQuery-0.1.min.js"></script>
@@ -28,16 +28,19 @@ Preparation
 
 5. Embed a vzaar video and tell us you need the JavaScript API
 
-        <iframe allowFullScreen
-          allowTransparency="true"
-          class="vzaar-video-player"
-          frameborder="0"
-          height="432"
-          id="vzvd-918833"
-          name="vzvd-918833"
-          src="http://view.vzaar.com/918833/player?apiOn=true"
-          title="vzaar video player"
-          type="text/html"
+        <iframe 
+          allowFullScreen 
+          allowTransparency="true" 
+          class="video-player" 
+          frameborder="0" 
+          height="432" 
+          id="vzvd-918833" 
+          mozallowfullscreen 
+          name="vzvd-918833" 
+          src="http://view.vzaar.com/918833/player?apiOn=true" 
+          title="video player" 
+          type="text/html" 
+          webkitAllowFullScreen 
           width="768">
         </iframe>
 
