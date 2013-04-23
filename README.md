@@ -19,7 +19,7 @@ Preparation
         
     4a. Or go the CDN-hosted route
             
-            <script src="//libs.vzaar.io/js/vzaar.jQuery-0.1.css"></script>
+            <script src="//libs.vzaar.io/css/vzaar.jQuery-0.1.css"></script>
             
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             <script src="//libs.vzaar.io/js/vzaar.jQuery-0.1.min.js"></script>
