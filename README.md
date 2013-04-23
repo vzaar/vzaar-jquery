@@ -10,7 +10,7 @@ Preparation
 2. Upload it to your server
 3. Link to the CSS in your header:
 
-        <link href="js/vzaar.jQuery.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/vzaar.jQuery.min.css" media="screen" rel="stylesheet" type="text/css">
 4. Link to the JavaScript files at the foot of your HTML
 
         <script src="js/jquery-1.9.1.min.js"></script>
