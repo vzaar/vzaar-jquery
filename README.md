@@ -52,7 +52,7 @@ This takes a list of timecodes in seconds and creates links to points in your vi
 
 Basic usage:
 
-    $(document).ready(function() {
+    $(window).load(function() {
       $('#vzvd-918833').vzChapterizer({
     	chapters		   : [0, 28, 79],
     	titles			   : ["Intro", "Another chapter", "The end!"]
@@ -78,7 +78,7 @@ This adds a bookmarking option to your video, that stores the saved timecode in 
 
 Basic usage:
 
-    $(document).ready(function() {
+    $(window).load(function() {
       $('#vzvd-918833').vzBookmarkifier();
     });
 
@@ -94,7 +94,7 @@ Displays the video's playcount below the video
 
 Basic usage:
     
-    $(document).ready(function() {
+    $(window).load(function() {
       $('#vzvd-918833').vzPlaycountattacher();
     });
     
@@ -103,7 +103,7 @@ Plays another of your vzaar videos as preroll.
 
 Basic usage:
 
-    $(document).ready(function() {
+    $(window).load(function() {
       $('#vzvd-918833').vzPrerollinator({
         pre     : "1096251"
       });
@@ -122,7 +122,7 @@ Plays another of your vzaar videos as... you guessed it... postroll.
 
 Basic usage:
 
-    $(document).ready(function() {
+    $(window).load(function() {
       $('#vzvd-918833').vzPostrollinator({
         post     : "1192459"
       });
@@ -136,17 +136,26 @@ All options:
     });
 
 ###Chaining
-Currently only the prerollinator and postrollinator can be chained.
+The Prerollinator and Postrollinator can be chained together. 
+The Chapterizer, Bookmarkifier and Playcountattacher can also be chained.
+Chaining the Pre/Postrollinator to the other methods will lead to misery. 
 
-Example:
+Examples:
 
-    $(document).ready(function() {
+    $(window).load(function() {
       $('#vzvd-918833').vzPrerollinator({
         pre     : "1096251"
       }).vzPostrollinator({
         post    : "1192459"
       });
     });
+    
+    /* ---- */
+    
+    $('#vzvd-918833').vzChapterizer({
+      chapters		: [0, 28, 79],
+      titles		: ["Intro", "Another chapter", "The end!"]
+    }).vzPlaycountattacher();
 
 ###Compatibility
 ####Flash
