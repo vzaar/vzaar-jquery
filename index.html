@@ -31,28 +31,29 @@
 </head>
 <body class="home">
 	<div class="container">
-		<div class="row contain">
-	    <iframe allowFullScreen
-	            allowTransparency="true"
-	            class="vzaar-video-player"
-	            frameborder="0"
-	            height="262"
-	            id="vzvd-918833"
-	            name="vzvd-918833"
-	            src="http://view.vzaar.com/918833/player?apiOn=true"
-	            title="vzaar video player"
-	            type="text/html"
-	            width="448">
-	    </iframe>
-		</div>
+    <iframe allowFullScreen
+            allowTransparency="true"
+            class="vzaar-video-player"
+            frameborder="0"
+            height="262"
+            id="vzvd-918833"
+            name="vzvd-918833"
+            src="http://view.vzaar.com/918833/player?apiOn=true"
+            title="vzaar video player"
+            type="text/html"
+            width="448">
+    </iframe>
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/vzaar.jQuery-0.1.js"></script>
-  <script src="js/flashtakt.client.min.js"></script>
+	<script src="js/vzaar.jQuery-0.1.min.js"></script>
+  <script src="http://player.vzaar.net/libs/flashtakt/client.min.js"></script>
 	<script>
-    $(document).ready(function() {
-      $('#vzvd-918833').vzPlaycountattacher();
+    $(window).load(function() {
+      $('#vzvd-918833').vzChapterizer({
+        chapters      : [0, 28, 79],
+        titles        : ["Intro", "A very long chapter name indeed, oh yes it is", "The end!"]
+      });
     });
 	</script>
 </body>

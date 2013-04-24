@@ -184,7 +184,8 @@
         chapterTitles = settings.titles,
         items = [];
 
-    if (settings.position === "top" || settings.position === "left") {
+    $that.wrap('<div class="vzContainer" />');
+      if (settings.position === "top" || settings.position === "left") {
       $that.before('<ul id="vzChapters"></ul>');
     } else if (settings.position === "bottom" || settings.position === "right") {
       $that.after('<ul id="vzChapters"></ul>');
@@ -201,6 +202,12 @@
     });
 
     $('#vzChapters').append( items.join('') );
+
+    if (settings.position === "left" || settings.position === "right") {
+      $('.vzContainer').css("width", function() {
+        return $('#vzChapters').outerWidth() + ($that.attr('width')*1 + 8);
+      });
+    }
 
     var $chapterSelection = $('#vzChapters li');
     $chapterSelection.first().addClass('current');
@@ -286,7 +293,7 @@
     return this;
   };
 
-}( jQuery ));
+}( jQuery );
 
 function vzInit(id) {
   return new vzPlayer(id);
