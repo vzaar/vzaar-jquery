@@ -90,7 +90,7 @@ All options:
     });
 
 ###Playcountattacher
-Displays the video's playcount below the video
+Displays the video's playcount below the video. Please note: this only works with public videos. 
 
 Basic usage:
     
