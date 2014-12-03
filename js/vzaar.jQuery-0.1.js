@@ -184,6 +184,11 @@
         chapterTitles = settings.titles,
         items = [];
 
+
+    if (chapterTiming[0] !== 0) {
+      chapterTiming.unshift(0);
+      chapterTitles.unshift("Please add a bookmark at 0 seconds");
+    }
     $that.wrap('<div class="vzContainer" />');
       if (settings.position === "top" || settings.position === "left") {
       $that.before('<ul id="vzChapters"></ul>');
@@ -293,7 +298,7 @@
     return this;
   };
 
-}( jQuery );
+})( jQuery );
 
 function vzInit(id) {
   return new vzPlayer(id);
@@ -397,3 +402,4 @@ function timeConvert(curTime) {
   };
 
 })(jQuery, document);
+
