@@ -18,9 +18,9 @@ Preparation
         <script src="js/flashtakt.client.min.js"></script>
         
     4a. Or go the CDN-hosted route
-            
-            <script src="//libs.vzaar.io/js/assets/vzaar.jQuery-0.1.css"></script>
-            
+        
+            <link href="//libs.vzaar.io/js/assets/vzaar.jQuery-0.1.css" media="screen" rel="stylesheet" type="text/css">
+
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             <script src="//libs.vzaar.io/js/vzaar.jQuery-0.1.min.js"></script>
             <script src="//libs.vzaar.io/js/flashtakt/client.min.js"></script>
