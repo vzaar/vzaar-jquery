@@ -16,31 +16,31 @@ Preparation
         <script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/vzaar.jQuery-0.1.min.js"></script>
         <script src="js/flashtakt.client.min.js"></script>
-        
+
     4a. Or go the CDN-hosted route
-        
-            <link href="//libs.vzaar.io/js/assets/vzaar.jQuery-0.1.css" media="screen" rel="stylesheet" type="text/css">
+
+            <link href="//libs.vzaar.com/js/assets/vzaar.jQuery-0.1.css" media="screen" rel="stylesheet" type="text/css">
 
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-            <script src="//libs.vzaar.io/js/vzaar.jQuery-0.1.min.js"></script>
-            <script src="//libs.vzaar.io/js/flashtakt/client.min.js"></script>
-            
+            <script src="//libs.vzaar.com/js/vzaar.jQuery-0.1.min.js"></script>
+            <script src="//libs.vzaar.com/js/flashtakt/client.min.js"></script>
+
 
 5. Embed a vzaar video and tell us you need the JavaScript API
 
-        <iframe 
-          allowFullScreen 
-          allowTransparency="true" 
-          class="video-player" 
-          frameborder="0" 
-          height="432" 
-          id="vzvd-918833" 
-          mozallowfullscreen 
-          name="vzvd-918833" 
-          src="http://view.vzaar.com/918833/player?apiOn=true" 
-          title="video player" 
-          type="text/html" 
-          webkitAllowFullScreen 
+        <iframe
+          allowFullScreen
+          allowTransparency="true"
+          class="video-player"
+          frameborder="0"
+          height="432"
+          id="vzvd-918833"
+          mozallowfullscreen
+          name="vzvd-918833"
+          src="http://view.vzaar.com/918833/player?apiOn=true"
+          title="video player"
+          type="text/html"
+          webkitAllowFullScreen
           width="768">
         </iframe>
 
@@ -90,14 +90,14 @@ All options:
     });
 
 ###Playcountattacher
-Displays the video's playcount below the video. Please note: this only works with public videos. 
+Displays the video's playcount below the video. Please note: this only works with public videos.
 
 Basic usage:
-    
+
     $(window).load(function() {
       $('#vzvd-918833').vzPlaycountattacher();
     });
-    
+
 ###Prerollinator
 Plays another of your vzaar videos as preroll.
 
@@ -136,9 +136,9 @@ All options:
     });
 
 ###Chaining
-The Prerollinator and Postrollinator can be chained together. 
+The Prerollinator and Postrollinator can be chained together.
 The Chapterizer, Bookmarkifier and Playcountattacher can also be chained.
-Chaining the Pre/Postrollinator to the other methods will lead to misery. 
+Chaining the Pre/Postrollinator to the other methods will lead to misery.
 
 Examples:
 
@@ -149,9 +149,9 @@ Examples:
         post    : "1192459"
       });
     });
-    
+
     /* ---- */
-    
+
     $('#vzvd-918833').vzChapterizer({
       chapters		: [0, 28, 79],
       titles		: ["Intro", "Another chapter", "The end!"]
